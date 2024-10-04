@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyFi Dashboard</title>
+    <link rel="stylesheet" href="stylesss.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>My Plan: <span id="planName">Premium Plan</span></h2>
+        <button class="btn" id="openCalculatorBtn">Open Mortgage Calculator</button>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>MoneyFi Dashboard</h1>
+            <button class="btn add-category-btn" onclick="showAddCategoryPopup()">Add Category</button>
+        </header>
+
+        <!-- Categories Section -->
+        <section class="categories-section">
+            <h2>Categories</h2>
+            <div id="categoriesList"></div>
+        </section>
+    </div>
+
+    <!-- Add Category Popup -->
+    <div id="addCategoryPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeAddCategoryPopup()">&times;</span>
+            <h3>Add New Category</h3>
+            <input type="text" id="newCategoryName" placeholder="Category Name">
+            <input type="number" id="goalAmount" placeholder="Set Goal (Optional)">
+            <button class="btn" id="addCategoryBtn">Add Category</button>
+        </div>
+    </div>
+
+    <script src="scriptsss.js"></script>
+</body>
+</html>

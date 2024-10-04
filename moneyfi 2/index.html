@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyFi - Join and Take Control of Your Finances</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to MoneyFi</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#join">Join Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <h2>Take Control of Your Finances</h2>
+        <p>Join MoneyFi today to track your spending, set goals, and budget smarter.</p>
+        <button onclick="showPopup()">Download Now</button>
+        <button onclick="signUp()">Sign Up</button>
+    </section>
+<!-- Popup for OS selection -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h3>Select Your Operating System</h3>
+        <ul>
+            <li><a href="#">Windows</a></li>
+            <li><a href="#">Mac OS</a></li>
+            <li><a href="#">Linux</a></li>
+            <li><a href="#">Android</a></li>
+            <li><a href="#">iOS</a></li>
+        </ul>
+    </div>
+</div>
+
+
+    <section class="features-section" id="features">
+        <h2>Why Join MoneyFi?</h2>
+        <p>With MoneyFi, you can track your income and expenses, create budgets, set financial goals, and visualize your progress. We offer an intuitive interface and detailed reports to help you make better financial decisions.</p>
+        <ul>
+            <li>Connect your credit cards and bank accounts</li>
+            <li>Track spending in real-time</li>
+            <li>Set and monitor financial goals</li>
+            <li>Get personalized budget insights</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2024 MoneyFi - All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
